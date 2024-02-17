@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<html>
+<head ></head>
+
+<body style=" background-color: #dfd7cc; ">
+<h1 style=  "   text-align: center;">    Picture </h1>
+
+<table style="margin: 0 auto;">
+
+    {% for row in range(size_s[0]) %}
+        <tr>
+        {% for pix in range(size_s[1]) %}
+            
+                <td style= "background-color :{{pix_to_color[row * size_s[1] + loop.index0]}}; height: 30px; width: 30px"></td>
+                
+        {% endfor %}
+        </tr>
+    {% endfor %}
+
+</table>
+
+
+</body>
+
+</html>
